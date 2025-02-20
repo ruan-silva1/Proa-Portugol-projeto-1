@@ -8,9 +8,10 @@ programa
 	leia(nome)
 	escreva("olá " + nome + "!")
 	cadeia resposta
+	
 	faca{
 		FazerPedido()
-		escreva("\n deseja escolher mais formas?")
+		escreva("\n deseja escolher mais formas? S/N")
 		leia(resposta)
 	}
 	enquanto(resposta == "s" ou resposta == "S")
@@ -19,23 +20,43 @@ programa
 
 	funcao FazerPedido(){
 	cadeia forma
+	real v1,v2
+	
 	escreva(" escolha uma forma geometrica para calcularmos a sua área\n")
+	
 	leia(forma)
-	inteiro v1
+	
+	se (forma == "quadrado"){
 	escreva("qual o valor do primeiro lado? ")
 	leia(v1)
-	inteiro v2
+	calcularFigura(forma,v1,0)	
+	}
+	
+	senao se (forma == "circulo"){
+	escreva("qual o valor do diametro? ")
+	leia(v1)
+	calcularFigura(forma,v1,0)	
+	}
+	
+	senao{
+	
+	escreva("qual o valor do primeiro lado? ")
+	leia(v1)
 	escreva("qual o valor do segundo lado ")
 	leia(v2)
 	
-	calcularFigura(forma,v1,v2)	
+	calcularFigura(forma,v1,v2)}
+	
 	}
 	
 	funcao calcularFigura(cadeia forma, real v1, real v2) {
 	    real area = 0
-	    se (forma == "quadrado" ou forma == "retangulo" ou forma == "paralelograma") {
+	    se (forma == "retangulo" ou forma == "paralelograma") {
 	        area = v1 * v2
 	    }
+	    senao se (forma == "quadrado"){
+	    		area = v1 * v1
+	    	}
 	    senao se (forma == "losango" ou forma == "triangulo") {
 	        area = (v1 * v2) / 2
 	    }
@@ -57,7 +78,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 181; 
+ * @POSICAO-CURSOR = 898; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
