@@ -1,0 +1,44 @@
+pede para o usuario escrever o nome
+grave o nome
+pede para o usuario escrever sua idade
+grave a idade como int
+mostre ola nome sua idade é
+
+faca
+pede para o usuario escrever o nome de uma forma
+grava a forma
+caso seja retangulo 
+	baseAltura
+	pede para o usuario o valor da base 
+	grava o valor da base como double
+	pede o valor da altura
+	grava o valor da altura double
+	mostre a area do retangulo é base * altura
+caso seja quadrado
+	pede para o usuario o valor do lado 
+	grava o valor da base como double
+	mostre a area do quadrado é lado * lado
+caso seja losango
+	pede para o usuario o valor da diagonal maior
+	a grava como 
+	pede para o usuario a diagonal menor
+	a grava como 
+	mostre a area do losango é (diagonal maior * diagonal menor) / 2
+caso seja trapezio
+	pede para o usuario o valor da base maior
+	a grava
+	pede para o usuario o valor da base menor 
+	a grava
+	pede para o usuario a altura 
+	a grava
+	mostre a area do losango é (base menor + base maior) * altura / 2
+caso seja paralelograma 
+	baseAltura
+caso seja triangulo
+	baseAltura / 2
+caso seja circulo
+	peça o valor do raio
+	mostre a area é 3.14 * (r*r)
+
+pede para o usuario se s ou n para mais formas
+enquanto s faca denovo

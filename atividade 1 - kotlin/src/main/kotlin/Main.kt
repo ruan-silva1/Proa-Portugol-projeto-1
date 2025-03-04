@@ -31,6 +31,7 @@ fun InvocarCalculo(formato: String){
         "trapezio" ->  calcularFormas(formato,"base maior","base menor",2,true,true)
         "triangulo" ->  calcularFormas(formato,"base","altura",2,false,true)
         "circulo"  -> calcularFormas(formato,"raio","raio",1,false,false)
+        else -> println("forma nao encontrada!")
     }
 
 }
